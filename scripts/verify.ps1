@@ -69,3 +69,7 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-atlas-svc-cache-golden.ps1
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-atlas_svc_cache_hub-casebook.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
